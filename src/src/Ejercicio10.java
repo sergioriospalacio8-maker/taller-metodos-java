@@ -5,9 +5,9 @@ public class Ejercicio10 {
 
         Inventario inventario = new Inventario();
 
-        inventario.agregarProductos(new Producto("Arroz", 4500, 10));
-        inventario.agregarProductos(new Producto("Leche", 3500, 8));
-        inventario.agregarProductos(new Producto("Pan", 2000, 15));
+        inventario.agregarProducto(new Producto("Arroz", 4500, 10));
+        inventario.agregarProducto(new Producto("Leche", 3500, 8));
+        inventario.agregarProducto(new Producto("Pan", 2000, 15));
 
         Inventario.mostrarInventario(inventario.productos);
         double total = Inventario.calcularValorTotalInventario(inventario.productos);
@@ -36,5 +36,9 @@ class Inventario {
 
     public Inventario(){
         productos = new ArrayList<>();
+    }
+
+    public void agregarProducto(Producto producto){
+        productos.add(producto);
     }
 }
