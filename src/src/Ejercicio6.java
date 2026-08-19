@@ -12,3 +12,11 @@ public class Ejercicio6 {
         System.out.println("La diferencia entre las notas es:" + resultado);
     }
 }
+
+class Estudiante {
+    double nota;
+
+    public Estudiante(double nota){
+        this.nota = nota;
+    }
+}
