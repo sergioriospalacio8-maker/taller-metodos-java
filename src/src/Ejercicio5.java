@@ -8,4 +8,8 @@ public class Ejercicio5 {
 
         System.out.println("Promedio del arreglo:" + promedio2);
     }
+
+    public static double calcularPromedio(double nota1, double nota2){
+        return (nota1 + nota2) / 2;
+    }
 }
