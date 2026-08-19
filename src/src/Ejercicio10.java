@@ -52,4 +52,16 @@ class Inventario {
         }
         return total;
     }
+
+    public static void mostrarInventario(
+            ArrayList<Producto> productos){
+
+        System.out.println("====== INVENTARIO =====");
+
+        for (Producto producto : productos){
+            System.out.println("Producto:" + producto.nombre + "Precio: $" + producto.precio + "Cantidad:" + producto.cantidad );
+        }
+
+    }
+    
 }
