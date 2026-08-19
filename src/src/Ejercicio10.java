@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Ejercicio10 {
     public static void main(String[] args){
 
@@ -25,5 +27,14 @@ class Producto {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
+    }
+}
+
+class Inventario {
+
+    ArrayList<Producto> productos;
+
+    public Inventario(){
+        productos = new ArrayList<>();
     }
 }
