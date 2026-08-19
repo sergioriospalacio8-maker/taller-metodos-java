@@ -5,7 +5,7 @@ public class Ejercicio6 {
         Estudiante estudiante1 = new Estudiante(4.5);
 
         // Llamo al metodo de instancia
-        estudiante1.mostrarBoeltin();
+        estudiante1.mostrarBoletin();
 
         // Llamo al metodo satic sin crear un objeto
         double resultado = Estudiante.compararNotas(4.5, 3.8);
@@ -23,5 +23,9 @@ class Estudiante {
     //Metodo de instancia
     public void mostrarBoletin(){
         System.out.println("La nota del estudiante es:" + this.nota);
+    }
+
+    public static double compararNotas(double n1, double n2){
+        return n1 - n2;
     }
 }
