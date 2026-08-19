@@ -41,4 +41,15 @@ class Inventario {
     public void agregarProducto(Producto producto){
         productos.add(producto);
     }
+
+    public static double calcularValorTotalInventario(
+            ArrayList<Producto> productos){
+
+        double total = 0;
+
+        for (Producto producto : productos){
+            total += producto.precio * producto.cantidad;
+        }
+        return total;
+    }
 }
