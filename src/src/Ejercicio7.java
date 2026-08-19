@@ -6,5 +6,14 @@ public class Ejercicio7 {
         System.out.println("El promedio general de la clase es:" + promedio);
     }
 
-    
+    public static double calcularPromedioClase(double[] calificaciones){
+        double suma = 0;
+
+        for (int i = 0; i < calificaciones.length; i++){
+            suma += calificaciones[i];
+
+        }
+
+        return suma / calificaciones.length;
+    }
 }
