@@ -19,4 +19,9 @@ class Estudiante {
     public Estudiante(double nota){
         this.nota = nota;
     }
+
+    //Metodo de instancia
+    public void mostrarBoletin(){
+        System.out.println("La nota del estudiante es:" + this.nota);
+    }
 }
